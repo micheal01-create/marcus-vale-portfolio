@@ -1,0 +1,931 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  color: rgb(246, 241, 241);
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.351), rgba(0, 0, 0, 0.5)),
+    url(Images/Bg\ image\ mvale.png);
+  background-size: cover;
+  background-position: center;
+  margin: 2%;
+  font-family: "Inter", sans-serif;
+}
+h1,
+h2 {
+  font-family: serif;
+}
+#p1 {
+  font-family: sans-serif;
+  font-size: large;
+  font-weight: 100;
+}
+#p2 {
+  font-family: sans-serif;
+  font-size: large;
+}
+nav {
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+
+  position: sticky;
+  top: 0%;
+}
+#nav4 {
+  text-align: center;
+  border: ridge 2px;
+  border-radius: 10px;
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0.723);
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: rgba(160, 160, 160, 0.901);
+}
+#intro {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: white;
+}
+
+#p1 {
+  letter-spacing: 1px;
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 600px;
+  color: white;
+}
+
+#p2 {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 550px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 30px;
+}
+
+#nav2,
+#nav3 {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+#nav2 a,
+#nav3 a {
+  display: inline-block;
+  padding: 13px 25px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-family: serif;
+  transition: 0.3s ease;
+}
+
+#nav2 a {
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+}
+
+#nav a,
+#nav3 :hover {
+  color: #ccc;
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
+
+#nav2 a:hover {
+  background-color: transparent;
+  color: white;
+}
+
+#nav3 a:hover {
+  background-color: white;
+  color: black;
+}
+#welcome {
+  font-family: monospace;
+  font-size: larger;
+  font-weight: 100;
+}
+#about {
+  min-height: 90vh;
+  padding: 100px 8%;
+  background-color: #111;
+  color: white;
+}
+
+#about h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 55px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+#marcus {
+  width: 380px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 4px;
+  float: left;
+  margin: 0 60px 30px 0;
+}
+
+#about > p {
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  line-height: 1.9;
+  max-width: 750px;
+}
+
+#abt {
+  clear: both;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ccc;
+  padding-top: 30px;
+  margin-top: 70px;
+  font-family: "Inter", sans-serif !important;
+  font-size: 15px !important;
+  letter-spacing: 1px;
+}
+
+#photography {
+  padding: 100px 8%;
+  background: #0b0b0b;
+  color: white;
+}
+
+#photography h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 70px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  letter-spacing: 1px;
+}
+
+#photography {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 45px 30px;
+}
+
+#photography h1 {
+  grid-column: 1 / -1;
+}
+
+#photography p {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  margin: 0 0 12px;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+#photography img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px;
+  transition:
+    transform 0.5s ease,
+    filter 0.5s ease;
+}
+
+#photography img:hover {
+  transform: scale(1.03);
+  filter: brightness(0.75);
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  #photography {
+    grid-template-columns: 1fr;
+    padding: 80px 6%;
+    gap: 35px;
+  }
+
+  #photography h1 {
+    font-size: 52px;
+    margin-bottom: 25px;
+  }
+
+  #photography p {
+    font-size: 21px;
+  }
+
+  #photography img {
+    height: 400px;
+  }
+}
+
+#services h1 {
+  font-family: "Playfair Display", serif;
+}
+#contact h1 {
+  font-family: "Playfair Display", serif;
+}
+
+#services {
+  padding: 110px 8%;
+  background: #111;
+  color: white;
+}
+
+#services h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 70px;
+  font-weight: 500;
+  margin: 0 0 25px;
+  letter-spacing: 1px;
+}
+
+#services > #servicep1 {
+  color: #aaa;
+  font-size: 17px;
+  max-width: 550px;
+  margin-bottom: 60px;
+}
+#services > #servicep2 {
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-size: 17px;
+  max-width: 550px;
+  margin-bottom: 60px;
+}
+
+#services {
+  padding: 100px 8%;
+  background: #111111;
+  color: white;
+}
+
+#services h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 70px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+#serviceintro {
+  color: #999;
+  font-size: 16px;
+  margin-bottom: 60px;
+}
+
+#servicep1,
+#servicep2,
+#servicep3,
+#servicep4 {
+  display: inline-block;
+  vertical-align: top;
+  width: 47%;
+  margin: 0 2% 50px 0;
+  color: #aaa;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+#servicep1 img,
+#servicep2 img,
+#servicep3 img,
+#servicep4 img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  border-radius: 18px;
+  margin-bottom: 20px;
+  transition: 0.5s ease;
+}
+
+#servicep1 strong,
+#servicep2 strong,
+#servicep3 strong,
+#servicep4 strong {
+  display: inline-block;
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+#servicep1 img:hover,
+#servicep2 img:hover,
+#servicep3 img:hover,
+#servicep4 img:hover {
+  transform: scale(1.03);
+  filter: brightness(0.75);
+}
+
+@media (max-width: 700px) {
+  #services {
+    padding: 80px 6%;
+  }
+
+  #services h1 {
+    font-size: 52px;
+  }
+
+  #servicep1,
+  #servicep2,
+  #servicep3,
+  #servicep4 {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #servicep1 img,
+  #servicep2 img,
+  #servicep3 img,
+  #servicep4 img {
+    height: 420px;
+  }
+
+  #servicep1 strong,
+  #servicep2 strong,
+  #servicep3 strong,
+  #servicep4 strong {
+    font-size: 23px;
+  }
+}
+/* =========================
+   FEATURED PROJECT
+========================= */
+
+#features {
+  padding: 120px 8%;
+  background: #0b0b0b;
+  color: white;
+  text-align: center;
+}
+
+/* SMALL LABEL */
+
+#features h1 {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 25px;
+}
+
+/* PROJECT TITLE */
+
+#features h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 65px;
+  font-weight: 500;
+  margin: 0 0 15px;
+}
+
+/* SHORT INTRO */
+
+#features h2 + p {
+  font-size: 18px;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+#features h2 + p + p {
+  color: #777;
+  font-size: 15px;
+  margin-bottom: 50px;
+}
+
+/* MAIN IMAGE */
+
+#lagos {
+  width: 100%;
+  max-width: 1100px;
+  height: 600px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 35px;
+  border-radius: 20px;
+  transition: transform 0.6s ease;
+}
+
+/* IMAGE HOVER */
+
+#lagos:hover {
+  transform: scale(1.02);
+}
+
+/* CATEGORIES */
+
+#features p:nth-of-type(3) {
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 30px;
+}
+
+/* PROJECT DESCRIPTION */
+
+#features p:nth-of-type(4) {
+  max-width: 650px;
+  margin: 0 auto 40px;
+  color: #aaa;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* EXPLORE BUTTON */
+
+#features a {
+  display: inline-block;
+  padding: 15px 32px;
+  border: 1px solid #555;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: 0.4s ease;
+}
+
+/* BUTTON HOVER */
+
+#features a:hover {
+  background: white;
+  color: #0b0b0b;
+  border-color: white;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+  #features {
+    padding: 80px 6%;
+  }
+
+  #features h2 {
+    font-size: 45px;
+  }
+
+  #lagos {
+    height: 450px;
+    border-radius: 15px;
+  }
+
+  #features p:nth-of-type(3) {
+    line-height: 2;
+    letter-spacing: 2px;
+  }
+
+  #features p:nth-of-type(4) {
+    font-size: 15px;
+  }
+}
+/* =========================
+   LAGOS PROJECT
+========================= */
+
+#lagos-project {
+  padding: 120px 8%;
+  background: #111;
+  color: white;
+}
+
+/* PROJECT TITLE */
+
+#lagos-project h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 70px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+/* INTRO TEXT */
+
+#lagos-project > p:first-of-type {
+  text-align: center;
+  color: #aaa;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+#lagos-project > p:nth-of-type(2) {
+  max-width: 650px;
+  margin: 0 auto 80px;
+  text-align: center;
+  color: #888;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+/* PROJECT IMAGES */
+
+#lagos-project img {
+  width: 100%;
+  max-width: 1000px;
+  height: 550px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 25px;
+  border-radius: 18px;
+  transition: transform 0.6s ease;
+}
+
+/* IMAGE HOVER */
+
+#lagos-project img:hover {
+  transform: scale(1.02);
+}
+
+/* CATEGORY TITLES */
+
+#lagos-project h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 38px;
+  font-weight: 400;
+  max-width: 1000px;
+  margin: 0 auto 10px;
+}
+
+/* CATEGORY DESCRIPTIONS */
+
+#lagos-project h2 + p {
+  max-width: 700px;
+  margin: 0 auto 90px;
+  color: #999;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+  #lagos-project {
+    padding: 80px 6%;
+  }
+
+  #lagos-project h1 {
+    font-size: 48px;
+  }
+
+  #lagos-project > p:first-of-type {
+    font-size: 16px;
+  }
+
+  #lagos-project img {
+    height: 450px;
+    border-radius: 14px;
+  }
+
+  #lagos-project h2 {
+    font-size: 32px;
+  }
+
+  #lagos-project h2 + p {
+    margin-bottom: 65px;
+  }
+}
+
+/* =========================
+   TESTIMONIALS
+========================= */
+
+#testimonials {
+  padding: 120px 8%;
+  background: #0b0b0b;
+  color: white;
+}
+
+/* HEADING */
+
+#testimonials h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 70px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 0 15px;
+}
+
+/* SUBTITLE */
+
+#testimonials > p:first-of-type {
+  text-align: center;
+  color: #888;
+  font-size: 15px;
+  margin-bottom: 70px;
+}
+
+/* TESTIMONIALS */
+
+#testimonial1,
+#testimonial2,
+#testimonial3 {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  margin: 0 1.5%;
+  padding: 35px 25px;
+  border: 1px solid #292929;
+  border-radius: 16px;
+  color: #bbb;
+  font-size: 16px;
+  line-height: 1.8;
+  transition: 0.4s ease;
+}
+
+/* CLIENT NAME */
+
+#testimonial1 strong,
+#testimonial2 strong,
+#testimonial3 strong {
+  display: block;
+  margin-top: 25px;
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+/* HOVER */
+
+#testimonial1:hover,
+#testimonial2:hover,
+#testimonial3:hover {
+  transform: translateY(-8px);
+  border-color: #666;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  #testimonials {
+    padding: 80px 6%;
+  }
+
+  #testimonials h1 {
+    font-size: 52px;
+  }
+
+  #testimonial1,
+  #testimonial2,
+  #testimonial3 {
+    display: block;
+    width: auto;
+    margin: 0 0 20px;
+  }
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+#contact {
+  padding: 120px 8%;
+  background: #111;
+  color: white;
+}
+
+/* HEADING */
+
+#contact h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 70px;
+  font-weight: 500;
+  margin: 0 0 20px;
+}
+
+/* INTRO */
+
+#contactintro {
+  color: #999;
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 500px;
+  margin-bottom: 60px;
+}
+
+/* CONTACT DETAILS */
+
+#email,
+#phone,
+#location {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  margin-right: 2%;
+  color: #aaa;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+#email strong,
+#phone strong,
+#location strong {
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* FORM */
+
+#contact form {
+  max-width: 800px;
+  margin-top: 70px;
+}
+
+/* LABELS */
+
+#contact label {
+  display: block;
+  margin-bottom: 8px;
+  color: #aaa;
+  font-size: 13px;
+}
+
+/* INPUTS */
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px;
+  margin-bottom: 25px;
+  background: #181818;
+  border: 1px solid #333;
+  border-radius: 8px;
+  color: white;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+/* MESSAGE BOX */
+
+#contact textarea {
+  height: 160px;
+  resize: vertical;
+}
+
+/* INPUT FOCUS */
+
+#contact input:focus,
+#contact textarea:focus {
+  border-color: #777;
+}
+
+/* PLACEHOLDER */
+
+#contact input::placeholder,
+#contact textarea::placeholder {
+  color: #666;
+}
+
+/* BUTTON */
+
+#contact button {
+  padding: 16px 35px;
+  background: white;
+  color: #111;
+  border: 1px solid white;
+  border-radius: 0;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+/* BUTTON HOVER */
+
+#contact button:hover {
+  background: transparent;
+  color: white;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+  #contact {
+    padding: 80px 6%;
+  }
+
+  #contact h1 {
+    font-size: 52px;
+  }
+
+  #email,
+  #phone,
+  #location {
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  #contact form {
+    margin-top: 45px;
+  }
+}
+/* =========================
+   FOOTER
+========================= */
+
+#footer {
+  padding: 80px 8% 30px;
+  background: #080808;
+  color: white;
+  text-align: center;
+  border-top: 1px solid #222;
+}
+
+/* NAME */
+
+#footer h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 38px;
+  font-weight: 500;
+  margin: 0 0 10px;
+}
+
+/* TAGLINE */
+
+#footer > p:first-of-type {
+  color: #888;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 35px;
+}
+
+/* SOCIAL LINKS */
+
+#social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  margin-bottom: 55px;
+}
+
+/* LINKS */
+
+#social-links a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+}
+
+/* LINK HOVER */
+
+#social-links a:hover {
+  color: white;
+}
+
+/* COPYRIGHT */
+
+#copyright {
+  padding-top: 25px;
+  border-top: 1px solid #222;
+  color: #555;
+  font-size: 12px;
+  margin: 0;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+  #footer {
+    padding: 65px 6% 25px;
+  }
+
+  #footer h2 {
+    font-size: 32px;
+  }
+
+  #social-links {
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+}
